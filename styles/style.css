@@ -1,0 +1,198 @@
+@import url(config.css);
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.welcome-header-row{
+    background-color: var(--main-green);
+    color: white;
+
+}
+
+.custom-dropdown {
+    background: none;
+    border: none;
+    color: white;
+    padding: 0;
+}
+
+#loader {
+    position: fixed;
+    inset: 0;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999999;
+}
+
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #ddd;
+    border-top: 5px solid var(--main-green);
+    border-radius: 50%;
+    animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.logo {
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.search-box {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.search-box input {
+    border: none;
+}
+
+.search-box input:focus {
+    box-shadow: none;
+}
+
+.search-box select {
+    border: none;
+}
+
+.search-box button {
+    border-radius: 0;
+    padding: 0 20px;
+    background-color: var(--main-green);
+    color: white;
+}
+
+.icon{
+    font-size: 35px;
+}
+
+.text-holder{
+    line-height: 5px;
+    padding-top: 5px;
+}
+
+.mini-text{
+    font-size: small;
+    color: #ccc;
+}
+
+.account-icon .text-holder:hover{
+    color: var(--main-green);
+    transition: 0.3s;
+}
+
+.icon-wrapper {
+    position: relative;
+}
+
+.badge {
+    position: absolute;
+    top: 3px;
+    left: 25px;
+
+    background: rgb(255, 63, 63);
+    color: white;
+
+    font-size: 12px;
+    width: 18px;
+    height: 18px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+}
+
+.search-bar-row, .custom-navbar{
+    border-bottom: 1px solid #ddd;
+}
+
+.offcanvas {
+    width: 350px;
+}
+
+.offcanvas-header {
+    border-bottom: 1px solid #eee;
+    background-color: #eee;
+}
+
+.offcanvas-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-close:hover{
+    transform: rotate(180deg);
+    transition: 0.5s;
+    color: var(--main-green);
+}
+
+.dropdown a{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+.hamburger-icon{
+    color: var(--main-green);
+    font-size: x-large;
+}
+
+.dropdown-title{
+    color: var(--main-green);
+    font-weight: 500;
+}
+
+.nav-link {
+    color: black;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    color: green;
+}
+
+.sale-text {
+    font-weight: 500;
+    font-size: 1rem;
+    z-index: -1;
+}
+
+.sale-text i {
+    margin-right: 5px;
+    color: #ff4d4d;
+    font-size: 1.2rem;
+}
+
+.dropdown-menu{
+    z-index: 2000;
+}
+
+.modal-content {
+    background: #0f6b3e;
+    color: white;
+    border-radius: 15px;
+}
+
+.modal-content input {
+    border-radius: 10px;
+    padding: 12px;
+}
+
+.modal-content .btn {
+    border-radius: 10px;
+    padding: 12px;
+}
