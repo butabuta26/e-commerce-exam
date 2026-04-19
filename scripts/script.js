@@ -7,14 +7,16 @@ window.addEventListener("load", function () {
 });
 
 function delay(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve();
+        }, ms);
+    });
 }
 
-async function showModalWithDelay() {
-    await delay(2500);
-
-    const modal = new bootstrap.Modal(document.getElementById('newsletterModal'));
-    modal.show();
-}
-
-window.addEventListener("load", showModalWithDelay);
+window.addEventListener("load", () => {
+    delay(2500).then(() => {
+        const modal = new bootstrap.Modal(document.getElementById('newsletterModal'));
+        modal.show();
+    });
+});

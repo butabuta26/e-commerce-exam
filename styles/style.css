@@ -196,3 +196,63 @@
     border-radius: 10px;
     padding: 12px;
 }
+
+.home-box {
+    height: 320px;
+    border-radius: 15px;
+    padding: 40px;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background: linear-gradient(135deg, #8b0000, #1a1a8b);
+}
+
+.home-box button {
+    width: 20%;
+}
+
+.small-box {
+    height: 150px;
+    border-radius: 15px;
+    padding: 20px;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background: linear-gradient(135deg, #b30000, #6a1b9a);
+}
+
+.home-box {
+    position: relative;
+    overflow: hidden;
+
+    height: 320px;
+    border-radius: 15px;
+    padding: 40px;
+    color: white;
+}
+
+.home-text {
+    position: relative;
+    z-index: 2;
+}
+
+.main-home-img {
+    position: absolute;
+    right: -6rem;
+
+    height: 80%;
+    object-fit: contain;
+
+    z-index: 1;
+}
+
+.home-box:hover img{
+    scale: 1.1;
+    transition: 0.3s;
+}
